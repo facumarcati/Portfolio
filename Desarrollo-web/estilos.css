@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  background-color: #222831;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo {
+  margin: 0;
+  padding-left: 10px;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  gap: 40px;
+  padding-right: 20px;
+  color: white;
+}
+
+.titulonav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #ef9651;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-size: large;
+  color: inherit;
+}
+
+h2 a:hover {
+  color: #ef9651;
+  transform: scale(1.1);
+  text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.5);
+}
+
+#principal {
+  background-color: #31363f;
+  width: 100%;
+  height: 92vh;
+}
+
+.FGM {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 35vh;
+  font-size: 500%;
+}
+
+.FGM-2 {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 15px;
+  font-size: large;
+}
+
+#sobre-mi {
+  background-color: #222831;
+  width: 100%;
+  height: 400px;
+}
+
+.sobre-mi {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 40px;
+}
+
+.desc {
+  color: white;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 40px;
+}
+
+#proyectos {
+  background-color: #31363f;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.div-proyecto {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+  width: 100%;
+}
+
+.div-proyecto h2,
+.div-proyecto p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-proyecto p {
+  padding-top: 10px;
+  font-size: large;
+}
+
+.proyectos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.proyecto {
+  background-color: #222831;
+  width: 270px;
+  height: 350px;
+  border-radius: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+}
+
+#habilidades {
+  background-color: #222831;
+  width: 100%;
+  height: 400px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 40px;
+}
+
+.volver-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #ff6600;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.volver-arriba:hover {
+  background-color: #ffcc00;
+  transform: scale(1.1);
+}
+
+#contacto {
+  background-color: #31363f;
+  width: 100%;
+  height: 400px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 40px;
+}
+
+.footer {
+  background-color: #222831;
+  width: 100%;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 0;
+  }
+
+  .FGM {
+    font-size: 200%;
+    padding-top: 30vh;
+  }
+
+  .FGM-2 {
+    font-size: medium;
+  }
+
+  #proyectos {
+    height: auto;
+    padding: 20px;
+  }
+
+  .proyectos-container {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .proyecto {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+
+  .volverse-arriba {
+    width: 45px;
+    height: 45px;
+  }
+}
